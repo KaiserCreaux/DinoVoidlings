@@ -1,0 +1,92 @@
+/*  This div class is the container for our menu.
+    It defines attributes for everything inside. */
+body  {
+    text-align:center;
+    background: url("http://imgur.com/HvLXymN.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #33ffbb;
+    font-family: garamond;
+}
+.team
+{
+margin:auto;
+width:23%;
+
+}
+img.team
+{max-width:100%;
+height:auto;
+border-style:solid;
+border-color: #33ffbb;
+}
+
+div.team {
+    font-family: "Helvetica";
+    font-size: 1em;
+    width: 70%;
+}
+
+/*  This ul class defines how your menu options
+    will be arranged and also gives us a nice 
+    dividing line between the menu and the content. */
+ul.tabs {
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*  This defines the look of the individual tabs of 
+    your menu when they are contained in a tabs class ul */
+ul li {
+    margin-bottom: -1px;
+    padding: 0.5% 1% 0.5% 1%;
+    border: 1px solid #33ffbb;
+    opacity: .5;
+
+    
+    /*  inline-block tells the browser to arrange the list
+        elements in a line rather than each element on its
+        own line. */
+    display: inline-block;
+    
+    /* The attributes here round the top left
+        and right corners of the tabs. */
+    border-top-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/* This defines what a tab should look like when selected */
+ul li.selected {
+
+    border: 3px solid #33ffbb;
+}
+/* This defines how a tab looks when your mouse hovers above it */
+/*ul.tabs li:hover {
+    font-size: 15px;
+    cursor: pointer;*/
+
+
+   ul li:hover {
+      opacity: 1;
+      }
+
+
+
+/*  This centers all of the text within a page element */
+div.page {
+    text-align: center;
+}
+/*  This overrides the text centering we defined above if
+    the text is within a list and also tells your browser
+    not to put bullet points next to the text. */
+div.page li {
+    text-align: left;
+    list-style-type: none;
+}
